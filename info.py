@@ -13,7 +13,7 @@ def is_enabled(value, default):
 # PyroClient Setup 
 API_ID = int(environ.get('API_ID', '10261086'))
 API_HASH = environ.get('API_HASH', '9195dc0591fbdb22b5711bcd1f437dab')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5339266080:AAHwt1hXSdJ0LKoEq_KN4nPgmPECtuegBYA")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6319930625:AAGabDA_nyUGFtbbm8Hswrk5jviNzN9XGS4")
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
@@ -46,7 +46,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', script.FORCE_SUB_TEXT)
 
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", script.WELCOM_TEXT)
-PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
+PMFILTER = is_enabled(environ.get('PMFILTER', "False"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
